@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'Muller-Bold';
+    src: url("../fonts/Muller/MullerBold.otf") format("opentype");
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Muller-Extra-Bold';
+    src: url("../fonts/Muller/MullerExtraBold.otf") format("opentype");
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'MullerRegular';
+    src: url("../fonts/Muller/MullerRegular.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MullerLigth';
+    src: url("../fonts/Muller/MullerLight.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Muller', 'Arial', sans-serif;
+}
+
+button:active, button:focus{
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Times New Roman", Arial;
+    line-height: 1.15;
+}
+
+.content-module{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fon2.png) no-repeat fixed;
+    /* background-position: right; */
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    background-size: 100% 100% ;
+
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+/*@media (min-width: 576px) {*/
+/*    .container {*/
+/*        max-width: 540px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 768px) {*/
+/*    .container {*/
+/*        max-width: 720px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 992px) {*/
+/*    .container {*/
+/*        max-width: 960px;*/
+/*    }*/
+/*}*/
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+.headercontent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo-wrapper{
+    display: flex;
+    margin-top: 1em;
+    margin-right: 2em;
+    margin-left: 12em;
+    padding-top: 1em;
+    margin-bottom: 1em
+}
+
+.logo{
+    display: inline;
+    margin-right: 0.5em;
+    font-family: 'Muller-Bold';
+    font-size: 2.0em;
+    text-transform: uppercase;
+}
+.logo-text{
+    width: 161px;
+    margin-left: 0.5em;
+    font-family: 'Muller-Bold';
+    font-size: 1.0em;
+}
+.headercontent__contact{
+    width: 30%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-right: 2em;
+    margin-left: 3em;
+    padding-bottom: 0.8em;
+    padding-left: 45px;
+    font-family: 'Muller-Bold';
+    font-weight: 700;
+    font-size: 1.0em;
+    background-image: url(../img/iconPhon.png);
+    background-repeat: no-repeat
+}
+.contact-link{
+    font-family: 'Muller-Extra-Bold';
+    font-size: 1.0em;
+    color: black;
+}
+.contact-text{
+    display: block;
+    margin: 0 0.5em;
+    font-size: 0.7em;
+    color: black;
+}
+.contentmain{
+    position: fixed;
+    top: 15%;
+    left: 23%;
+}
+.content-technology{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+.contentmain__subtitle{
+    text-transform: uppercase;
+    font-size: 2.0em;
+    font-weight: 900;
+    margin-left: -1.9em;
+}
+.content-technology__item{
+    margin: 1em;
+    flex: 1 0 40%;
+}
+.thechoice-technology{
+    display: block;
+    float: left;
+    margin-right: 3em;
+}
+.name-technology{
+    width: 55%;
+    margin-left: 3em;
+}
+.text-technology{
+    width: 80%;
+    margin-left: 3em;
+    margin-top: 2em;
+    text-align: left;
+    font-family: 'MullerLigth';
+
+}
+.wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.navigation{
+    width: 60%;
+}
+.proger{
+    width: 92%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: -280px;
+    left: 334px;
+    z-index: -1;
+}
+.worker__contacts{
+    position: absolute;
+    top: 11em;
+    right: 13em;
+    width: 25em;
+    height: 13em;
+    text-align: center;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    overflow: hidden;
+    background: #140f0f;
+}
+.worker-link{
+    display: block;
+    padding-top: 3em;
+    color: white;
+    background-image: url(../img/Phone-technology.png);
+    background-repeat: no-repeat;
+}
+/*.contentmain__text{*/
+/*    width: 68%;*/
+/*    margin-top: 1em;*/
+/*    margin-bottom: 1em;*/
+/*    text-align: end;*/
+/*    font-family: 'MullerRegular';*/
+/*}*/
+/*.colorchanges{*/
+/*    color: #9b410e;*/
+/*    font-family: 'Muller-Bold';*/
+/*}*/
+.contentmain__btn{
+    padding: 1em;
+    border-radius: 2em;
+    border: none;
+    float: right;
+    margin-right: 16em;
+    overflow: hidden;
+    background-color: #1f0f00;
+    width: 22%;
+    color: white;
+    font-size: 0.9em;
+}
+
