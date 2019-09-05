@@ -189,7 +189,7 @@ html, body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 .on-site-developers__item{
     width: 148%;
@@ -204,38 +204,58 @@ html, body{
     background-position-y: 4%
 }
 /* The slider itself */
-.slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 100%; /* Full-width */
-    height: 25px; /* Specified height */
-    background: #d3d3d3; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-}
-
 /* Mouse-over effects */
-.slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+    display: flex;
+    /*justify-content: space-evenly;*/
+}
+.slidecontainer__item{
+    margin: 0 0.7em;
+    font-family: 'MullerMedium';
+    font-size: 1.2em;
+}
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;
+    width: 60%;
+    height: 15px;
+    border-radius: 5px;
+    background: #676363;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: width  .2s;
 }
 
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
 .slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
+    -webkit-appearance: none;
+    position: relative;
     appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #4CAF50; /* Green background */
-    cursor: pointer; /* Cursor on hover */
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #2a2626;
+    border: 6px solid white;
+    cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #4CAF50; /* Green background */
-    cursor: pointer; /* Cursor on hover */
+     width: 25px;
+     height: 25px;
+     border-radius: 50%;
+     background: #4CAF50;
+     border: 1px solid white;
+     cursor: pointer;
+ }
+.content-technology__text{
+    margin-top: 4em;
+    margin-right: 3em;
+    font-family: 'MullerMedium';
+    font-size: 1.0em;
+}
+.importance{
+    font-family: 'Muller-Bold';
+    font-size: 1.0em;
 }
 .lite-orange-check {
     background-image: url(http://csscheckbox.com/checkboxes/lite-orange-check.png);
@@ -259,10 +279,23 @@ html, body{
     margin-top: 2em;
     text-align: end;
 }
+.active{
+    font-size: 1.7em;
+    font-weight: 500;
+    color: black;
+}
+.navigation__count{
+    display: inline-block;
+    font-size: 1.3em;
+    margin-top: 0.5em;
+}
 .proger{
     width: 100%;
     height: auto;
     object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 .worker__photo{
     position: absolute;
@@ -313,10 +346,12 @@ html, body{
     color: black;
 }
 .contentmain__btn{
-    width: 32%;
-    height: 4em;
-    padding: 1em;
-    margin-right: 9em;
+    display: block;
+    width: 25%;
+    /* height: 3em; */
+    padding-top: 1em;
+    padding: 1.5em;
+    margin-right: 8em;
     margin-left: 2em;
     float: right;
     border-radius: 4em;
@@ -326,5 +361,30 @@ html, body{
     color: white;
     font-size: 1em;
     font-weight: 600;
+    text-align: center;
 }
+@media (min-width: 768px) and (max-width: 1100px) {
+    .logo-wrapper{
+        margin-left: 3em;
+    }
+    .contentmain__header{
+        font-size: 0.8em;
+    }
+    .contentmain__subtitle{
+        font-size: 1.5em;
+        margin-left: -0.9em;
+    }
+    .contentmain__btn{
+        width: 31%;
+    }
+    .contentmain{
+        top: 14%;
+        left: 13%;
+        width: 100%;
+    }
+    .worker__contacts{
+        right: 3em;
+        width: calc(100vw - 70%);
+    }
 
+}
